@@ -40,19 +40,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      content: "(555) 123-ROBOT",
+      content: "(+976) 99119911",
       description: "Monday - Friday, 3:00 PM - 6:00 PM"
     },
     {
       icon: MapPin,
-      title: "Visit Us",
+      title: "NUM, APT 7th of 115",
       content: "Innovation High School",
       description: "Robotics Lab, Building C, Room 201"
     },
     {
       icon: Calendar,
       title: "Meeting Hours",
-      content: "Mon-Fri: 3:30-6:00 PM",
+      content: "Mon-Sun: 6:00-8:00 PM",
       description: "Saturday workshops during build season"
     }
   ];
@@ -69,7 +69,7 @@ const Contact = () => {
   const faqs = [
     {
       question: "How can I join the robotics team?",
-      answer: "We welcome new members at the beginning of each school year. Attend our information session in September or contact us directly."
+      answer: "Just come us."
     },
     {
       question: "Do I need prior robotics experience?",
@@ -77,7 +77,7 @@ const Contact = () => {
     },
     {
       question: "What time commitment is required?",
-      answer: "Regular season: 3-4 hours per week. Build season (Jan-Feb): 15-20 hours per week including weekends."
+      answer: "Regular season: 24 hours per day. Build season (Sep to next year ofSep): 15-20 hours per week including weekends."
     },
     {
       question: "How can my company sponsor the team?",
@@ -88,7 +88,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 to-primary-glow/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,11 +98,11 @@ const Contact = () => {
               Get In Touch
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Contact 
+              Contact
               <span className="bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent"> Champions</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Ready to join our championship legacy? Have questions about sponsorship? 
+              Ready to join our championship legacy? Have questions about sponsorship?
               Want to collaborate with our team? We'd love to hear from you.
             </p>
           </div>

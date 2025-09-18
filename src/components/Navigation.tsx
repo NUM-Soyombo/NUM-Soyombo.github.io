@@ -31,7 +31,7 @@ const Navigation = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg text-foreground">Soyombo Robotics</span>
-              <span className="text-xs text-accent font-semibold">6 удаагийн үндэсний аварга</span>
+              {/* <span className="text-xs text-accent font-semibold">6 удаагийн үндэсний аварга</span> */}
             </div>
           </Link>
 

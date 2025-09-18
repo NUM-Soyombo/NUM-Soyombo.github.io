@@ -34,7 +34,7 @@ const About = () => {
     { year: "2010", event: "5th Consecutive Win", description: "Established ourselves as a robotics powerhouse" },
     { year: "2015", event: "10th Championship", description: "Reached double-digit championship wins" },
     { year: "2020", event: "15th Championship", description: "Maintained excellence through adversity" },
-    { year: "2024", event: "20th Championship", description: "Achieved unprecedented 20-year winning streak" }
+    { year: "2024", event: "6th Championship", description: "Achieved unprecedented 20-year winning streak" }
   ];
 
   return (

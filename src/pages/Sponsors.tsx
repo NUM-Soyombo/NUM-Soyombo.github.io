@@ -15,19 +15,19 @@ const Sponsors = () => {
       bgColor: "bg-accent/10",
       sponsors: [
         {
-          name: "TechCorp Industries",
+          name: "Mirai Technologies LLC",
           logo: "TC",
           type: "Technology Partner",
           contribution: "Primary funding and engineering mentorship",
-          since: "2015",
-          website: "www.techcorp.com"
+          since: "2024",
+          website: "https://mirai-technologies.com/"
         },
         {
-          name: "Innovation Manufacturing",
+          name: "Andorean LLC",
           logo: "IM",
           type: "Manufacturing Partner",
           contribution: "CNC machining and 3D printing services",
-          since: "2018",
+          since: "2022",
           website: "www.innovationmfg.com"
         }
       ]
@@ -134,7 +134,7 @@ const Sponsors = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 to-primary-glow/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -144,11 +144,11 @@ const Sponsors = () => {
               Our Supporters
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Thank You 
+              Thank You
               <span className="bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent"> Sponsors</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Our championship success wouldn't be possible without the generous support of our 
+              Our championship success wouldn't be possible without the generous support of our
               community partners. Together, we're building the future of robotics education.
             </p>
           </div>
@@ -186,7 +186,7 @@ const Sponsors = () => {
                         </div>
                         <div className="flex justify-between items-center">
                           <div>
-                            <span className="text-xs text-muted-foreground">Partner since </span>
+                            <span className="text-xs text-muted-foreground">Partner in </span>
                             <span className={`text-xs font-semibold ${tier.textColor}`}>{sponsor.since}</span>
                           </div>
                           <Button variant="ghost" size="sm" className="h-8 px-2">

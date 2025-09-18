@@ -9,8 +9,8 @@ import Footer from "@/components/Footer";
 const Home = () => {
   const achievements = [
     { year: "2024", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
-    { year: "2023", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
-    { year: "2022", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
+    { year: "2018", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
+    { year: "2016", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
     { year: "2021", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
   ];
 
@@ -52,8 +52,9 @@ const Home = () => {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
-                  <Link to="/robots">Роботууд</Link>
+                <Button asChild variant="outline" size="lg" className="border-white-500 text-black-500 hover:bg-red-500 hover:text-white">
+                  <Link to="/robots">Роботууд
+                    <ArrowRight className="ml-2 h-5 w-5" /></Link>
                 </Button>
               </div>
             </div>
@@ -62,10 +63,10 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary-glow/20 rounded-3xl blur-3xl"></div>
               <Card className="relative bg-background/10 backdrop-blur-sm border-primary-foreground/20">
                 <CardContent className="p-8 text-center">
-                  <div className="text-6xl font-bold text-accent mb-2">6</div>
-                  <div className="text-primary-foreground text-lg mb-4">Үндэсний аварга</div>
+                  <div className="text-6xl font-bold text-accent mb-2">+20</div>
+                  <div className="text-primary-foreground text-lg mb-4">жилийн туршлага</div>
                   <div className="text-primary-foreground/80 text-sm">
-                    Жил бүр амжилттай оролцдог
+                    Тасралтгүй амжилттай оролцсон
                   </div>
                 </CardContent>
               </Card>
