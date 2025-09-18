@@ -1,27 +1,46 @@
-# GitHub Pages Deployment Guide
+# GitHub User Pages Deployment Guide
 
-## Quick Setup
+## Setup for num-soyombo.github.io
 
-1. **Update Repository Name**: 
-   - Edit `vite.config.ts` and replace `/your-repo-name/` with your actual repository name
-   - Example: If your repo is `champions-robotics`, change it to `/champions-robotics/`
+### Step 1: Create the Correct Repository
+1. **Repository Name**: Create a repository named exactly `num-soyombo.github.io`
+2. **Important**: The repository name MUST match your GitHub username + `.github.io`
 
-2. **Push to GitHub**:
-   ```bash
-   git add .
-   git commit -m "Add GitHub Pages deployment"
-   git push origin main
-   ```
+### Step 2: Push Your Code
+```bash
+git add .
+git commit -m "Initial robotics website"
+git push origin main
+```
 
-3. **Enable GitHub Pages**:
-   - Go to your repository settings
-   - Navigate to "Pages" section
-   - Under "Source", select "GitHub Actions"
-   - The workflow will automatically deploy your site
+### Step 3: Enable GitHub Pages
+1. Go to your repository settings
+2. Navigate to "Pages" section  
+3. Under "Source", select "GitHub Actions"
+4. The workflow will automatically deploy your site
 
-## Your Site URL
-Once deployed, your site will be available at:
-`https://[your-username].github.io/[your-repo-name]/`
+### Step 4: Access Your Site
+Your site will be available at: `https://num-soyombo.github.io`
+
+## Deployment Process
+
+The GitHub Actions workflow will:
+1. Automatically trigger on every push to main branch
+2. Build your React app with Vite
+3. Deploy to GitHub Pages
+4. Your site updates within 2-3 minutes
+
+## Repository Requirements
+
+- **Repository name**: Must be `num-soyombo.github.io` (exactly)
+- **Branch**: Deploy from `main` branch
+- **Visibility**: Repository must be public (for free GitHub Pages)
+
+## Troubleshooting
+
+- If the site doesn't appear, check the Actions tab for build errors
+- Ensure repository name matches your username exactly
+- Wait 5-10 minutes after first deployment for DNS propagation
 
 ## Manual Deployment (Alternative)
 
