@@ -8,10 +8,10 @@ import Footer from "@/components/Footer";
 
 const Home = () => {
   const achievements = [
-    { year: "2024", title: "National Champions", competition: "FIRST Robotics Competition" },
-    { year: "2023", title: "National Champions", competition: "FIRST Robotics Competition" },
-    { year: "2022", title: "National Champions", competition: "FIRST Robotics Competition" },
-    { year: "2021", title: "National Champions", competition: "FIRST Robotics Competition" },
+    { year: "2024", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
+    { year: "2023", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
+    { year: "2022", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
+    { year: "2021", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
   ];
 
   const stats = [
