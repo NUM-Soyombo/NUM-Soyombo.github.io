@@ -29,8 +29,8 @@ const About = () => {
   ];
 
   const milestones = [
-    { year: "2004", event: "Team Founded", description: "Champions Robotics was established with a vision of excellence" },
-    { year: "2005", event: "First Championship", description: "Won our first national championship in rookie year" },
+    { year: "2000", event: "Team Founded", description: "Champions Robotics was established with a vision of excellence" },
+    { year: "2006", event: "First Championship", description: "Won our first national championship in rookie year" },
     { year: "2010", event: "5th Consecutive Win", description: "Established ourselves as a robotics powerhouse" },
     { year: "2015", event: "10th Championship", description: "Reached double-digit championship wins" },
     { year: "2020", event: "15th Championship", description: "Maintained excellence through adversity" },
@@ -40,7 +40,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 to-primary-glow/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,12 +50,12 @@ const About = () => {
               Our Story
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Two Decades of 
+              Two Decades of
               <span className="bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent"> Excellence</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Since 2004, Champions Robotics has redefined what's possible in competitive robotics. 
-              Our unprecedented 20-year championship streak represents more than victories—it's a testament 
+              Since 2004, Champions Robotics has redefined what's possible in competitive robotics.
+              Our unprecedented 20-year championship streak represents more than victories—it's a testament
               to our culture of innovation, mentorship, and sustainable excellence.
             </p>
           </div>
@@ -69,13 +69,13 @@ const About = () => {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                To foster innovation in robotics engineering while inspiring the next generation of technical leaders. 
-                We believe that through collaborative problem-solving, rigorous engineering practices, and a commitment 
+                To foster innovation in robotics engineering while inspiring the next generation of technical leaders.
+                We believe that through collaborative problem-solving, rigorous engineering practices, and a commitment
                 to excellence, we can prepare students for successful careers in STEM fields.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our unique approach combines cutting-edge technology with time-tested mentorship practices, 
-                ensuring that each new generation of team members inherits not just technical knowledge, 
+                Our unique approach combines cutting-edge technology with time-tested mentorship practices,
+                ensuring that each new generation of team members inherits not just technical knowledge,
                 but the values and work ethic that drive championship performance.
               </p>
             </div>
@@ -146,7 +146,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Our comprehensive documentation and mentorship program ensures that critical knowledge, 
+                  Our comprehensive documentation and mentorship program ensures that critical knowledge,
                   strategies, and engineering practices are preserved and passed down to new team members.
                 </p>
               </CardContent>
@@ -161,7 +161,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Senior members serve as mentors and technical leads, creating continuity across 
+                  Senior members serve as mentors and technical leads, creating continuity across
                   competition seasons while developing the next generation of team leaders.
                 </p>
               </CardContent>
@@ -176,7 +176,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  We've built a culture where excellence is the expectation, not the exception. 
+                  We've built a culture where excellence is the expectation, not the exception.
                   Every new member joins a legacy of success and is motivated to maintain our standards.
                 </p>
               </CardContent>

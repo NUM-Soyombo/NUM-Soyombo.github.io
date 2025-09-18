@@ -34,7 +34,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      content: "team@championsrobotics.org",
+      content: "soyomboteam@gmail.com",
       description: "General inquiries and support"
     },
     {
