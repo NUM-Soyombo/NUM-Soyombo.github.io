@@ -22,11 +22,11 @@ const Home = () => {
   ];
 
   console.log("Home component is rendering");
-  
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary-glow to-secondary">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -38,11 +38,11 @@ const Home = () => {
                 20-Time National Champions
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
-                Champions 
+                Champions
                 <span className="bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent"> Robotics</span>
               </h1>
               <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-                Two decades of excellence in robotics engineering. Every year, new members. 
+                Two decades of excellence in robotics engineering. Every year, new members.
                 Every year, national champions. Join the legacy of innovation and success.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -57,7 +57,7 @@ const Home = () => {
                 </Button>
               </div>
             </div>
-            
+
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary-glow/20 rounded-3xl blur-3xl"></div>
               <Card className="relative bg-background/10 backdrop-blur-sm border-primary-foreground/20">
