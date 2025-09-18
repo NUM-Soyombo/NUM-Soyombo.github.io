@@ -30,8 +30,8 @@ const Navigation = () => {
               <Trophy className="h-6 w-6 text-primary-foreground" />
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-lg text-foreground">Champions Robotics</span>
-              <span className="text-xs text-accent font-semibold">20-Time National Champions</span>
+              <span className="font-bold text-lg text-foreground">Soyombo Robotics</span>
+              <span className="text-xs text-accent font-semibold">6 удаагийн үндэсний аварга</span>
             </div>
           </Link>
 

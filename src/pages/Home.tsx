@@ -15,9 +15,9 @@ const Home = () => {
   ];
 
   const stats = [
-    { icon: Trophy, value: "20", label: "Championships", color: "text-accent" },
-    { icon: Users, value: "250+", label: "Alumni", color: "text-primary" },
-    { icon: Cog, value: "50+", label: "Robots Built", color: "text-secondary" },
+    { icon: Trophy, value: "6", label: "Үндэсний аварга", color: "text-accent" },
+    { icon: Users, value: "250+", label: "Багийн гишүүд", color: "text-primary" },
+    { icon: Cog, value: "50+", label: "Робот хөгжүүлсэн туршлага", color: "text-secondary" },
     { icon: Award, value: "100%", label: "Success Rate", color: "text-accent" },
   ];
 
@@ -35,25 +35,25 @@ const Home = () => {
             <div className="text-center lg:text-left">
               <Badge variant="secondary" className="mb-4 bg-accent/10 text-accent border-accent/20">
                 <Medal className="w-4 h-4 mr-2" />
-                20-Time National Champions
+                6 удаагийн үндэсний аварга
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
-                Champions
-                <span className="bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent"> Robotics</span>
+                Үндэсний
+                <span className="bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent"> Роботын тэмцээн</span>
               </h1>
               <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-                Two decades of excellence in robotics engineering. Every year, new members.
-                Every year, national champions. Join the legacy of innovation and success.
+                Ази номхон далайн бүсийн үндэсний телвизийн дунд жил бүр зохион байгуулагддаг
+                робоын аварга шалгаруулах тэмцээн.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                   <Link to="/about">
-                    Learn Our Story
+                    Багийн түүх
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
-                  <Link to="/robots">View Our Robots</Link>
+                  <Link to="/robots">Роботууд</Link>
                 </Button>
               </div>
             </div>
@@ -62,10 +62,10 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary-glow/20 rounded-3xl blur-3xl"></div>
               <Card className="relative bg-background/10 backdrop-blur-sm border-primary-foreground/20">
                 <CardContent className="p-8 text-center">
-                  <div className="text-6xl font-bold text-accent mb-2">20</div>
-                  <div className="text-primary-foreground text-lg mb-4">Consecutive Championships</div>
+                  <div className="text-6xl font-bold text-accent mb-2">6</div>
+                  <div className="text-primary-foreground text-lg mb-4">Үндэсний аварга</div>
                   <div className="text-primary-foreground/80 text-sm">
-                    An unprecedented streak of excellence in competitive robotics
+                    Жил бүр амжилттай оролцдог
                   </div>
                 </CardContent>
               </Card>
@@ -97,9 +97,9 @@ const Home = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Mission</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Бидний алсын хараа</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              To foster innovation in robotics engineering while building the next generation of technical leaders
+              Дэлхийд үнэлэгдэх инженерүүдийг бэлтгэнэ.
             </p>
           </div>
 
@@ -111,7 +111,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-xl font-semibold">Innovation</h3>
                 <p className="text-muted-foreground">
-                  Pushing the boundaries of what's possible with cutting-edge robotics technology and creative problem-solving.
+                  Орчин үеийн роботын технологийг нэвтрүүлсэн.
                 </p>
               </CardContent>
             </Card>

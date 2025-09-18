@@ -13,13 +13,13 @@ const Footer = () => {
                 <Trophy className="h-6 w-6 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-bold text-lg">Champions Robotics</h3>
+                <h3 className="font-bold text-lg">Soyombo Robotics</h3>
                 <p className="text-accent text-sm font-semibold">20-Time National Champions</p>
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Building excellence through innovation, teamwork, and dedication. 
-              Our legacy of championship wins spans two decades, with each generation 
+              Building excellence through innovation, teamwork, and dedication.
+              Our legacy of championship wins spans two decades, with each generation
               of students continuing our tradition of engineering excellence.
             </p>
           </div>
