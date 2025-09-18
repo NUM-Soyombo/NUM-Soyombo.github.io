@@ -21,6 +21,8 @@ const Home = () => {
     { icon: Award, value: "100%", label: "Success Rate", color: "text-accent" },
   ];
 
+  console.log("Home component is rendering");
+  
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
