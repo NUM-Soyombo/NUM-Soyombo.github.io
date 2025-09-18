@@ -42,15 +42,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-accent" />
-                <span className="text-sm text-muted-foreground">team@championsrobotics.org</span>
+                <span className="text-sm text-muted-foreground">soyomboteam@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-accent" />
-                <span className="text-sm text-muted-foreground">Innovation High School</span>
+                <span className="text-sm text-muted-foreground">National University of Mongolia</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Github className="h-4 w-4 text-accent" />
-                <span className="text-sm text-muted-foreground">@champions-robotics</span>
+                <span className="text-sm text-muted-foreground">@NUM-Soyombo</span>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Champions Robotics Team. All rights reserved. | 20 Years of Excellence
+            © 2024 Champions Robotics Team. All rights reserved. | 20 Years of Experience
           </p>
         </div>
       </div>

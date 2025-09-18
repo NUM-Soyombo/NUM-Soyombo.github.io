@@ -18,7 +18,8 @@ const Gallery = () => {
       title: "2024 National Championship Victory",
       description: "Team celebrating with the championship trophy",
       year: "2024",
-      placeholder: "Trophy ceremony with confetti and team celebration"
+      // placeholder: "Trophy ceremony with confetti and team celebration",
+      src: "/images/Image.jpeg"
     },
     {
       id: 2,
@@ -129,33 +130,54 @@ const Gallery = () => {
     { id: "behind-scenes", label: "Behind Scenes", icon: Video }
   ];
 
-  const filteredItems = selectedCategory === "all" 
-    ? galleryItems 
+  const filteredItems = selectedCategory === "all"
+    ? galleryItems
     : galleryItems.filter(item => item.category === selectedCategory);
 
   const MediaCard = ({ item }: { item: typeof galleryItems[0] }) => (
     <Card className="group overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
       <div className="relative aspect-video bg-gradient-to-br from-primary/10 to-primary-glow/10">
-        <div className="absolute inset-0 flex items-center justify-center">
-          {item.type === "video" ? (
-            <div className="text-center space-y-2">
-              <div className="w-16 h-16 mx-auto bg-gradient-to-br from-primary to-primary-glow rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Play className="h-8 w-8 text-primary-foreground ml-1" />
+        {item.type === "image" && item.src ? (
+          <img
+            src={item.src}
+            alt={item.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            {item.type === "video" ? (
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 mx-auto bg-gradient-to-br from-primary to-primary-glow rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Play className="h-8 w-8 text-primary-foreground ml-1" />
+                </div>
+                <div className="text-sm text-muted-foreground px-4">
+                  {item.placeholder}
+                </div>
               </div>
-              <div className="text-sm text-muted-foreground px-4">{item.placeholder}</div>
-            </div>
-          ) : (
-            <div className="text-center space-y-2">
-              <div className="w-16 h-16 mx-auto bg-gradient-to-br from-accent to-yellow-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                <ImageIcon className="h-8 w-8 text-accent-foreground" />
+            ) : (
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 mx-auto bg-gradient-to-br from-accent to-yellow-400 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <ImageIcon className="h-8 w-8 text-accent-foreground" />
+                </div>
+                <div className="text-sm text-muted-foreground px-4">
+                  {item.placeholder}
+                </div>
               </div>
-              <div className="text-sm text-muted-foreground px-4">{item.placeholder}</div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
+        )}
+
+        {/* Badges */}
         <div className="absolute top-3 left-3">
-          <Badge variant={item.type === "video" ? "default" : "secondary"} className="bg-background/80 backdrop-blur-sm">
-            {item.type === "video" ? <Video className="w-3 h-3 mr-1" /> : <Camera className="w-3 h-3 mr-1" />}
+          <Badge
+            variant={item.type === "video" ? "default" : "secondary"}
+            className="bg-background/80 backdrop-blur-sm"
+          >
+            {item.type === "video" ? (
+              <Video className="w-3 h-3 mr-1" />
+            ) : (
+              <Camera className="w-3 h-3 mr-1" />
+            )}
             {item.type.toUpperCase()}
           </Badge>
         </div>
@@ -165,6 +187,7 @@ const Gallery = () => {
           </Badge>
         </div>
       </div>
+
       <CardContent className="p-4">
         <h3 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
           {item.title}
@@ -176,10 +199,11 @@ const Gallery = () => {
     </Card>
   );
 
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 to-primary-glow/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -189,11 +213,11 @@ const Gallery = () => {
               Media Gallery
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Championship 
+              Championship
               <span className="bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent"> Moments</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Explore the highlights from our competitions, behind-the-scenes moments, and the 
+              Explore the highlights from our competitions, behind-the-scenes moments, and the
               incredible robots that have made us 20-time national champions.
             </p>
           </div>

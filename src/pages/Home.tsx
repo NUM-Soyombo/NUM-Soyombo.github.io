@@ -38,8 +38,8 @@ const Home = () => {
                 6 удаагийн үндэсний аварга
               </Badge>
               <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6">
-                Үндэсний
-                <span className="bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent"> Роботын тэмцээн</span>
+                SOYOMBO
+                <span className="bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent"> Robotics</span>
               </h1>
               <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
                 Ази номхон далайн бүсийн үндэсний телвизийн дунд жил бүр зохион байгуулагддаг
