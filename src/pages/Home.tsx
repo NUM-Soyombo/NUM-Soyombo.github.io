@@ -28,7 +28,7 @@ const Home = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-cover bg-center" style={{backgroundImage: 'url(/images/Image.jpeg)'}}>
+      <section className="relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url(/images/Image.jpeg)' }}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -93,6 +93,39 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Recent Achievements */}
+      <section className="py-20 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Recent Championships</h2>
+            <p className="text-xl text-muted-foreground">Our latest victories in national competition</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {achievements.map((achievement, index) => (
+              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow border-l-4 border-l-accent">
+                <CardContent className="space-y-3">
+                  <div className="text-2xl font-bold text-accent">{achievement.year}</div>
+                  <div className="flex justify-center">
+                    <Trophy className="h-8 w-8 text-accent" />
+                  </div>
+                  <h3 className="font-semibold text-foreground">{achievement.title}</h3>
+                  <p className="text-sm text-muted-foreground">{achievement.competition}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button asChild size="lg" variant="outline">
+              <Link to="/about">
+                View Complete History
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
 
       {/* Mission Section */}
       <section className="py-20">
@@ -144,39 +177,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Recent Achievements */}
-      <section className="py-20 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Recent Championships</h2>
-            <p className="text-xl text-muted-foreground">Our latest victories in national competition</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {achievements.map((achievement, index) => (
-              <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow border-l-4 border-l-accent">
-                <CardContent className="space-y-3">
-                  <div className="text-2xl font-bold text-accent">{achievement.year}</div>
-                  <div className="flex justify-center">
-                    <Trophy className="h-8 w-8 text-accent" />
-                  </div>
-                  <h3 className="font-semibold text-foreground">{achievement.title}</h3>
-                  <p className="text-sm text-muted-foreground">{achievement.competition}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild size="lg" variant="outline">
-              <Link to="/about">
-                View Complete History
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>
