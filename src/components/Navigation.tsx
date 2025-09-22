@@ -24,12 +24,17 @@ const Navigation = () => {
   return (
     <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-22">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="p-2 bg-gradient-to-br from-primary to-primary-glow rounded-lg">
-              <Trophy className="h-6 w-6 text-primary-foreground" />
+            <div className="p-0 bg-gradient-to-br from-primary to-primary-glow rounded-lg w-20 h-20 flex items-center justify-center overflow-hidden">
+              <img
+                src="/images/logo/SOYMBO_logo.png"
+                alt="Soyombo Robotics Logo"
+                className="w-15 h-15 object-cover object-center transition-transform duration-300 hover:scale-150 origin-center"
+              />
             </div>
+
             <div className="flex flex-col">
               <span className="font-bold text-lg text-foreground">Soyombo Robotics</span>
               {/* <span className="text-xs text-accent font-semibold">6 удаагийн үндэсний аварга</span> */}
@@ -96,7 +101,7 @@ const Navigation = () => {
           </div>
         )}
       </div>
-    </nav>
+    </nav >
   );
 };
 

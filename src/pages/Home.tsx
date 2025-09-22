@@ -10,15 +10,14 @@ import { useState, useEffect } from "react";
 const Home = () => {
   const heroImages = [
     '/images/Image.jpeg',
-    '/images/IMG_2448.JPG',
-    '/images/IMG_0317.HEIC'
+    '/images/IMG_2448.JPG'
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
+      setCurrentImageIndex((prevIndex) =>
         (prevIndex + 1) % heroImages.length
       );
     }, 3000);
@@ -51,9 +50,8 @@ const Home = () => {
         {heroImages.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
-              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+              }`}
             style={{ backgroundImage: `url(${image})` }}
           />
         ))}

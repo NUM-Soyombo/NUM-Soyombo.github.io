@@ -9,8 +9,12 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="p-2 bg-gradient-to-br from-primary to-primary-glow rounded-lg">
-                <Trophy className="h-6 w-6 text-primary-foreground" />
+              <div className="p-2 bg-gradient-to-br from-primary to-primary-glow rounded-lg w-16 h-16 flex items-center justify-center overflow-hidden">
+                <img
+                  src="/images/logo/SOYMBO_logo.png"
+                  alt="Soyombo Robotics Logo"
+                  className="object-contain w-full h-full transition-transform duration-300 hover:scale-110"
+                />
               </div>
               <div>
                 <h3 className="font-bold text-lg">Soyombo Robotics</h3>
