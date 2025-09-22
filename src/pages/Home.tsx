@@ -5,8 +5,27 @@ import { Link } from "react-router-dom";
 import { Trophy, Users, Cog, Award, ArrowRight, Zap, Target, Medal } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { useState, useEffect } from "react";
 
 const Home = () => {
+  const heroImages = [
+    '/images/Image.jpeg',
+    '/images/IMG_2448.JPG',
+    '/images/IMG_0317.HEIC'
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % heroImages.length
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
   const achievements = [
     { year: "2024", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
     { year: "2018", title: "Үндэсний аварга", competition: "FIRST Robotics Competition" },
@@ -28,7 +47,7 @@ const Home = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: 'url(/images/Image.jpeg)' }}>
+      <section className="relative overflow-hidden bg-cover bg-center transition-all duration-1000 ease-in-out" style={{ backgroundImage: `url(${heroImages[currentImageIndex]})` }}>
         <div className="absolute inset-0 bg-black/50 animate-pulse"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-48">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
