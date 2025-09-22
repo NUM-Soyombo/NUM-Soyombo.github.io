@@ -43,7 +43,7 @@ const About = () => {
 
       {/* Hero Section */}
       <section
-        className="relative py-80 bg-center bg-fixed transition-all duration-8 hover:bg-[length:100%_100%]"
+        className="relative py-80 bg-center bg-fixed transition-all duration-700 hover:bg-[length:100%_100%]"
         style={{
           backgroundImage: "url(/images/IMG_2448.JPG)",
           backgroundSize: "200%", // default zoom
