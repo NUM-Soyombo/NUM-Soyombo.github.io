@@ -42,18 +42,19 @@ const About = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary/10 to-primary-glow/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url(/images/IMG_2448.JPG)' }}>
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           <div className="text-center">
             <Badge variant="secondary" className="mb-4 bg-accent/10 text-accent border-accent/20">
               <Trophy className="w-4 h-4 mr-2" />
               Our Story
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Two Decades of
               <span className="bg-gradient-to-r from-accent to-yellow-400 bg-clip-text text-transparent"> Excellence</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
               Since 2004, Champions Robotics has redefined what's possible in competitive robotics.
               Our unprecedented 20-year championship streak represents more than victories—it's a testament
               to our culture of innovation, mentorship, and sustainable excellence.
