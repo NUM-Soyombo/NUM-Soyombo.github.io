@@ -42,7 +42,14 @@ const About = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url(/images/IMG_2448.JPG)' }}>
+      <section
+        className="relative py-80 bg-center bg-fixed transition-all duration-8 hover:bg-[length:100%_100%]"
+        style={{
+          backgroundImage: "url(/images/IMG_2448.JPG)",
+          backgroundSize: "200%", // default zoom
+          backgroundPosition: "center",
+        }}
+      >
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           <div className="text-center">
