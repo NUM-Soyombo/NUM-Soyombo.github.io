@@ -1,9 +1,19 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { User, Crown, Code, Wrench, Gamepad2, Palette, Users } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+
+// Import member images
+import alexChenImg from "/images/member/alex-chen.jpg";
+import mayaRodriguezImg from "/images/member/maya-rodriguez.jpg";
+import samThompsonImg from "/images/member/sam-thompson.jpg";
+import jordanKimImg from "/images/member/jordan-kim.jpg";
+import taylorBrooksImg from "/images/member/taylor-brooks.jpg";
+import caseyWilliamsImg from "/images/member/casey-williams.jpg";
+import riverPatelImg from "/images/member/river-patel.jpg";
+import averyJohnsonImg from "/images/member/avery-johnson.jpg";
 
 const Members = () => {
   const currentMembers = [
@@ -13,7 +23,8 @@ const Members = () => {
       grade: "Senior",
       icon: Crown,
       bio: "Leading the team for two years, specializing in autonomous programming and strategic planning.",
-      skills: ["Leadership", "Python", "Strategy"]
+      skills: ["Leadership", "Python", "Strategy"],
+      image: alexChenImg
     },
     {
       name: "Maya Rodriguez",
@@ -21,7 +32,8 @@ const Members = () => {
       grade: "Senior",
       icon: Code,
       bio: "Expert in robot control systems and computer vision algorithms.",
-      skills: ["C++", "Computer Vision", "AI"]
+      skills: ["C++", "Computer Vision", "AI"],
+      image: mayaRodriguezImg
     },
     {
       name: "Sam Thompson",
@@ -29,7 +41,8 @@ const Members = () => {
       grade: "Junior",
       icon: Wrench,
       bio: "Mechanical design specialist with expertise in CAD and manufacturing.",
-      skills: ["CAD", "Manufacturing", "Design"]
+      skills: ["CAD", "Manufacturing", "Design"],
+      image: samThompsonImg
     },
     {
       name: "Jordan Kim",
@@ -37,7 +50,8 @@ const Members = () => {
       grade: "Senior",
       icon: Gamepad2,
       bio: "Primary robot operator with exceptional hand-eye coordination and game analysis skills.",
-      skills: ["Driving", "Strategy", "Game Analysis"]
+      skills: ["Driving", "Strategy", "Game Analysis"],
+      image: jordanKimImg
     },
     {
       name: "Taylor Brooks",
@@ -45,7 +59,8 @@ const Members = () => {
       grade: "Junior",
       icon: Palette,
       bio: "Handles team branding, social media, and sponsor relations.",
-      skills: ["Design", "Marketing", "Communication"]
+      skills: ["Design", "Marketing", "Communication"],
+      image: taylorBrooksImg
     },
     {
       name: "Casey Williams",
@@ -53,7 +68,8 @@ const Members = () => {
       grade: "Sophomore",
       icon: Wrench,
       bio: "Passionate about hands-on construction and mechanical systems.",
-      skills: ["Assembly", "Testing", "Problem Solving"]
+      skills: ["Assembly", "Testing", "Problem Solving"],
+      image: caseyWilliamsImg
     },
     {
       name: "River Patel",
@@ -61,7 +77,8 @@ const Members = () => {
       grade: "Sophomore",
       icon: Code,
       bio: "Developing skills in autonomous programming and sensor integration.",
-      skills: ["Java", "Sensors", "Learning"]
+      skills: ["Java", "Sensors", "Learning"],
+      image: riverPatelImg
     },
     {
       name: "Avery Johnson",
@@ -69,7 +86,8 @@ const Members = () => {
       grade: "Junior",
       icon: Users,
       bio: "Analyzes competition data and develops strategic alliances.",
-      skills: ["Data Analysis", "Scouting", "Strategy"]
+      skills: ["Data Analysis", "Scouting", "Strategy"],
+      image: averyJohnsonImg
     }
   ];
 
@@ -143,6 +161,7 @@ const Members = () => {
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader className="text-center pb-4">
                   <Avatar className="w-20 h-20 mx-auto mb-4">
+                    <AvatarImage src={member.image} alt={member.name} className="object-cover" />
                     <AvatarFallback className="bg-gradient-to-br from-primary to-primary-glow text-primary-foreground text-lg">
                       {member.name.split(' ').map(n => n[0]).join('')}
                     </AvatarFallback>
